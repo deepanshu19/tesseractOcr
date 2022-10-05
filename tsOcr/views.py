@@ -15,7 +15,7 @@ import pandas as pd
 import cv2
 
 # import summarize to summarize the ocred text
-from gensim.summarization.summarizer import summarize
+# from gensim.summarization.summarizer import summarize
 
 from .forms import ImageUpload
 import os
@@ -104,7 +104,7 @@ def index(request):
                 # text = text.decode()
 
                 # Summary (0.1% of the original content).
-                summarized_text = summarize(text, ratio=0.1)
+                # summarized_text = summarize(text, ratio=0.1)
                 os.remove(pathz)
             except:
                 message = "check your filename and ensure it doesn't have any space or check if it has any text"
